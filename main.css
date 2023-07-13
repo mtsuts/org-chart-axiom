@@ -1,3 +1,8 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Times New Roman', Times, serif
+}
+
 .chart-container {
   height: 100vh;
   background-color: #fffeff"
@@ -5,6 +10,11 @@
 }
 
 h1 {
+  color: #4C87B9;
+  text-align: center;
+}
+
+h2 {
   color: #4C87B9;
   text-align: center;
 }
