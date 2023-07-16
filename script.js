@@ -104,8 +104,6 @@ d3.csv(
         }</div>
           
           </div>
-
-          
         `;
     })
     .render();
