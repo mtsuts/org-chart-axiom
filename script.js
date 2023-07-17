@@ -13,7 +13,6 @@ d3.csv(
     const centerTopDistance = 0;
     const centerLeftDistance = 0;
     const expanded = false; //d.id=="O-6"
-
     const titleMarginLeft = nodeImageWidth / 2 + 20 + centerLeftDistance;
     const contentMarginLeft = width / 2 + 25;
     return {
