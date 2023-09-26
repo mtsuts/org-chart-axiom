@@ -8,6 +8,7 @@ d3.csv(
     const cornerShape = ['ORIGINAL', 'ROUNDED', 'CIRCLE'][
       Math.round(Math.random() * 2)
     ];
+
     const nodeImageWidth = 100;
     const nodeImageHeight = 100;
     const centerTopDistance = 0;
@@ -50,6 +51,7 @@ d3.csv(
           alpha: 1,
         },
       },
+
       nodeIcon: {
         icon: 'https://to.ly/1yZnX',
         size: 30,
@@ -84,6 +86,8 @@ d3.csv(
     };
   });
 
+  console.log(mappedData)
+
   chart = new d3.OrgChart()
     .container('.chart-container')
     .data(mappedData)
@@ -95,7 +99,7 @@ d3.csv(
       return `
         <div class="outer-wrapper" style="padding-left:70px;padding-top:0px;background-color:#E1E5EC;width:${d.width - 70
         }px;height:${d.height}px">
-          <img style="border-radius:20px;margin-left:-100px;margin-top:-30px" width=50 height=50 src="${d.data.nodeImage.url
+          <img style="border-radius:20px;margin-left:-100px;margin-top:-30px" width=70 height=70 src="${d.data.nodeImage.url
         }"/>
           <div  style="margin-left:-70px;margin-top:-40px;border-radius:5px;color:white;background-color:#4C87B9;width:${d.width
         }px;  height:${d.height}px">
